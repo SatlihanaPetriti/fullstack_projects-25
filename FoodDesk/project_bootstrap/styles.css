@@ -1,0 +1,123 @@
+.food-image {
+    width: 100%;
+    height: 34.866rem;
+    object-fit: cover;
+}
+ /* Email and Password */
+  .form-control-lg {
+      width: 100%;          
+      max-width: 500px;     
+      height: 30px;         
+      border-radius: 8px;   
+      border: 1px solid #ccc; 
+      font-size: 1rem;      
+  }
+
+  .form-control-lg:focus {
+      border-color: rgb(252, 128, 25); 
+      box-shadow: none; 
+    }
+
+
+/* Checkbox */
+#remember_me {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+#remember_me:focus {
+    outline: none;
+    box-shadow: none;
+    border:2px solid #FC8019;
+
+}
+
+#remember_me:checked {
+    background-color: #FC8019;
+    border-color: #FC8019;
+}
+
+#remember_me:checked::after {
+    position: absolute;
+    border: solid white;
+}
+
+/* FORGOT PASSWORD */
+
+.forgot-password {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 10;
+    text-decoration: none; 
+    color: rgb(61, 65, 82);      
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    color: #FC8019;
+}
+/* Sign Me in*/
+.d-grid .btn-primary {
+    background-color: #FC8019; 
+    border-color: #FC8019;     
+    color: #ffffff;            
+}
+
+.d-grid .btn-primary:hover {
+    background-color: #e67300; 
+    border-color: #e67300;
+    
+}
+/* Sign up*/
+.divider-text {
+    margin-bottom: 10px;
+}
+
+/* <!-- Social buttons --> */
+.social-container {
+    margin-top: -10px; 
+}
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;           
+    border: 1px solid #ccc; 
+    border-radius: 0.5rem;
+    background-color: #fff;  
+    color: #000;             
+    
+}
+
+.social-btn:hover {
+    color: #7E808C;
+    background-color: #eee;
+    box-shadow: 0 0 0 0.25rem rgba(238, 238, 238, 0.5);
+}
+.social-btn .icon-circle {
+    display: flex;
+    overflow: hidden;    
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;       
+    background-color: #fff;
+       
+}
+
+.social-btn .icon-circle img {
+    width: 100%;              
+    height: 100%;         
+    object-fit: cover;    
+    border-radius: 50%; 
+    display: block;
+}
+/* already have an account*/
+.text-center a {
+    color: #FC8019;   
+}
