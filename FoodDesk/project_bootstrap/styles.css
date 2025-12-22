@@ -4,19 +4,18 @@
     object-fit: cover;
 }
  /* Email and Password */
-  .form-control-lg {
+.form-control-lg {
       width: 100%;          
       max-width: 500px;     
       height: 30px;         
       border-radius: 8px;   
       border: 1px solid #ccc; 
       font-size: 1rem;      
-  }
-
-  .form-control-lg:focus {
+}
+.form-control-lg:focus {
       border-color: rgb(252, 128, 25); 
       box-shadow: none; 
-    }
+}
 
 
 /* Checkbox */
@@ -61,6 +60,7 @@
 .forgot-password:hover {
     color: #FC8019;
 }
+
 /* Sign Me in*/
 .d-grid .btn-primary {
     background-color: #FC8019; 
@@ -73,6 +73,7 @@
     border-color: #e67300;
     
 }
+
 /* Sign up*/
 .divider-text {
     margin-bottom: 10px;
@@ -117,6 +118,7 @@
     border-radius: 50%; 
     display: block;
 }
+
 /* already have an account*/
 .text-center a {
     color: #FC8019;   
