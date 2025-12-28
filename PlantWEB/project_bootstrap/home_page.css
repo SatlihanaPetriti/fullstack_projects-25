@@ -126,6 +126,7 @@ body {
     background-color: #F5F5EC;
 }
 
+/*==============*/
 /* Announcement bar */
 .announcement-bar {
     background-color: #214332;
@@ -225,8 +226,9 @@ body {
     }
 }
 
-/* Menu navbar */
 
+/*==============*/
+/* Menu navbar */
 .site-navbar {
     background-color: #F5F5EC;
     height: 86px;
@@ -247,6 +249,7 @@ body {
 
 
 
+/*==============*/
 /* Menu content */
 .nav-link {
     color: #172e22;
@@ -284,7 +287,7 @@ body {
 }
 
 
-
+/*==============*/
 /* Menu: slider */
 .carousel-caption {
     position: relative;
