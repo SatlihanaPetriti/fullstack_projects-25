@@ -110,17 +110,10 @@ section {
 @font-face {
     font-family: 'Albert Sans';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-display: swap;
     src: url('https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZbYFc.woff2') format('woff2');
 }
-@font-face {
-    font-family: 'AlbertSans';
-    src: url('../fonts/i7dOIFdwYjGaAMFtZd_QA1ZbYFc.woff2') format('woff2');
-    font-weight: 500;   /* adjust to your desired weight */
-    font-style: normal;
-}
-
 
 body {
     background-color: #F5F5EC;
@@ -253,7 +246,7 @@ body {
 /* Menu content */
 .nav-link {
     color: #172e22;
-    font-family: 'AlbertSans', sans-serif;
+    font-family: 'Albert Sans', sans-serif;
     display: inline-flex;       
     align-items: center; 
     font-weight:500;
@@ -289,17 +282,6 @@ body {
 
 /*==============*/
 /* Menu: slider */
-.carousel-caption {
-    position: relative;
-    top: 50%;
-    text-align: center;
-    background-color: #172e22;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 6px;
-    font-weight: 500;
-    text-decoration: none;
-}
 
 .carousel-caption span {
     display: inline-block;
@@ -307,7 +289,7 @@ body {
 .carousel-inner,
 .carousel-inner .box-content,
 .carousel-inner .box-content *:not(i) {
-    font-family: 'AlbertSans', sans-serif;
+    font-family: 'Albert Sans', sans-serif;
 }
 
 /* Box content overlay */
@@ -326,7 +308,7 @@ body {
     font-weight: 400;
     font-size: 80px;
     line-height: 96px;
-    margin-bottom: 15px;
+  
 }
 
 .box-content h1 {
@@ -358,4 +340,26 @@ body {
 .btn-plant:hover {
     background-color: #172e22;
     color: #fff !important;
+}
+
+/* BRANDS*/
+/* "AS FEATURED IN" styling */
+.featured-title {
+  font-family: 'Albert Sans', sans-serif;
+  color: #214332;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+    padding-top: 140px;
+    padding-bottom: 100px;
+}
+.edit-container{
+    background-color:#214332;
+    max-width: 1410px;
+    border-radius: 10px;
+    min-height: 500px; 
 }
