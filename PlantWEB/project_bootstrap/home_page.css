@@ -504,12 +504,11 @@ body {
     height: 31px;
     background-size: 14px 14px;
     background-color: transparent;
-    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    border: 1.5px solid #B5B5B5 !important;
     border-radius: 50%;
     background-image: none; 
 }
 #testimonialSlider .carousel-control-prev-icon i{
-    color: #ffffff;
     font-size: 20px;
     position: relative; 
     top: 5px; 
@@ -517,7 +516,6 @@ body {
 }
 
 #testimonialSlider .carousel-control-next-icon i {
-    color: #ffffff; 
     font-size: 20px;
     position: relative;
     top: 5px; 
