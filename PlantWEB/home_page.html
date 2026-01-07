@@ -7,9 +7,11 @@
     <title>Home Plant</title>
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./project_bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./project_bootstrap/home_page.css">
     <link rel="stylesheet" href="./project_bootstrap/featured-products.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -137,15 +139,16 @@
                     <a href="#"><img src="./node_modules/bootstrap-icons/icons/person.svg" alt="User" class="icon"></a>
                     <a href="#"><img src="./node_modules/bootstrap-icons/icons/heart.svg" alt="Wishlist"
                             class="icon"></a>
-                    <a href="#"><img src="./node_modules/bootstrap-icons/icons/shop-window.svg" alt="Cart"
-                            class="icon"></a>
+                    <a href="#"><img src="./node_modules/bootstrap-icons/icons/bag.svg" alt="Cart" class="icon"></a>
                 </div>
             </div>
         </div>
     </header>
     <main>
+        <!-- Menu: slider -->
         <section>
-            <div id="plantCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="3000">
+            <div id="plantCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="3000"
+                data-bs-wrap="true" >
 
                 <!-- Pagination bullets -->
                 <div class="carousel-indicators plant-indicators">
@@ -362,36 +365,596 @@
             </div>
         </section>
         <!-- Featured product section -->
-        <section class="featured-products py-5">
-            <div class="container-fluid px-5 pt-4">
-                <div class="d-flex justify-content-between ">
-                    <h3 class="text-fp">Featured Products</h3>
-                    <div class="nav-buttons d-flex">
-                        <div class="nav-buttons d-flex">
-                            <button class="btn-sw nav-prev" type="button" data-target="#featuredProductsSlider"
-                                data-slide="prev">
-                                <span class="icon icon-arrow-left">
-                                    <i class="fa fa-angle-left"></i>
-                                </span>
-                            </button>
-                            <button class="btn-sw nav-next" type="button" data-target="#featuredProductsSlider"
-                                data-slide="next">
-                                <span class="icon icon-arrow-right">
-                                    <i class="fa fa-angle-right"></i>
-                                </span>
-                            </button>
-                        </div>
+        <section class="shop-products">
+            <div class="container-fluid">
+                <!-- TOP ROW -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="text-fp mb-0">Shop by Collection</h3>
+
+                    <div class="collection-nav d-flex gap-0">
+                        <button class="collection-nav-btn js-prev" type="button">
+                            <i class="fa fa-angle-left"></i>
+                        </button>
+                        <button class="collection-nav-btn js-next" type="button">
+                            <i class="fa fa-angle-right"></i>
+                        </button>
                     </div>
                 </div>
 
-                <div id="featuredProductsSlider" class="mt-5">
-                    <!-- Product slider content -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide 1 -->
+                        
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <div class="image-wrapper position-relative">
+                                    <!-- Radio buttons -->
+                                    <input type="radio" name="collection-2-color" id="collection-2-black" checked>
+                                    <input type="radio" name="collection-2-color" id="collection-2-brown">
+                                    <input type="radio" name="collection-2-color" id="collection-2-white">
+
+                                    <!-- Main images -->
+                                    <img src="./images/plant-1.jpg" class="img-fluid product-img img-black">
+                                    <img src="./images/plant-3.jpg" class="img-fluid product-img img-brown">
+                                    <img src="./images/plant-4.jpg" class="img-fluid product-img img-white">
+
+                                    <!-- Hover image -->
+                                    <img src="./images/plant-2.jpg" class="img-fluid hover-img">
+
+                                    <!-- Action buttons -->
+                                    <div class="product-actions">
+                                        <button class="action-btn"><i
+                                                class="material-icons">shopping_basket</i></button>
+                                        <button class="action-btn"><i class="fa fa-heart"></i></button>
+                                        <button class="action-btn"><i class="material-icons">compare_arrows</i></button>
+                                        <button class="action-btn"><i class="fa fa-eye"></i></button>
+                                    </div>
+                                </div>
+
+                                <!-- Product info -->
+                                <h6 class="mt-3 mb-1">Peace Lily</h6>
+                                <small>$59.00</small>
+
+                                <!-- Color swatches -->
+                                <div class="color-swatches-horizontal mt-2">
+                                    <label for="collection-2-black" class="swatch swatch-black"></label>
+                                    <label for="collection-2-brown" class="swatch swatch-brown"></label>
+                                    <label for="collection-2-white" class="swatch swatch-white"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
 
-    </main>
-    <script src="project_bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
 
+
+
+
+
+
+
+
+
+        <!-- Greenhouse section -->
+        <section class="greenhouse-section">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+                    <div class="position-relative h-100">
+                        <div class="greenhouse-img-container">
+                            <img src="./images/collection-plant-1.jpg" class="w-100 h-100 object-fit-cover"
+                                alt="Greenhouse Plant">
+                        </div>
+
+                        <a href="https://www.youtube.com/embed/4H95VPQFexc?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=4H95VPQFexc&enablejsapi=1&rel=0&modestbranding=1"
+                            class="play-button">
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 d-flex flex-column justify-content-center">
+                    <span class="section-label fw-bold mb-3 d-block">
+                        Life Gathers Around Plants
+                    </span>
+                    <h2 class="mb-4">Straight from the <br> Greenhouse</h2>
+                    <p class="mb-4">
+                        Follow along on a Bird of Paradise's journey from our greenhouse to your home,<br>
+                        and learn how we care for your plant every step of the way.
+                    </p>
+                    <a class="btn btn-success btn-lg rounded-pill">
+                        Learn More
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ICON BOXES -->
+        <section class="py-5 bg_white radius-10">
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="icon-container py-5 px-5">
+                    <!-- Title -->
+                    <div class="row mb-5">
+                        <div class="col-12 text-center">
+                            <h2 class="title-text text-center mt-5">
+                                We’re solving the biggest problems in furniture
+                            </h2>
+                        </div>
+                    </div>
+                    <!-- Icon Boxes -->
+                    <div class="row g-4 text-center">
+                        <!-- Item 1 -->
+                        <div class="col-12 col-md-4">
+                            <div class="h-100 p-4 text-center">
+                                <div class="mb-3">
+                                    <img src="./images/img1.svg" alt="Fast & free shipping" class="icon-svg" />
+                                </div>
+                                <h5 class="mb-2">Fast & free shipping</h5>
+                                <p class="mb-0">
+                                    Every single order ships for free. No minimums,<br>
+                                    no tiers, no fine print whatsoever.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="col-12 col-md-4">
+                            <div class="h-100 p-4 text-center">
+                                <div class="mb-3 d-flex justify-content-center">
+                                    <img src="./images/img2.svg" alt="Modular design logo" class="icon-svg" />
+                                </div>
+                                <h5 class=" mb-2">Modular, easy-to-move design</h5>
+                                <p class="mb-0">
+                                    Our innovative modular design is driven by the<br>
+                                    belief that furniture should fit this
+                                    home, and the<br> next one.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="col-12 col-md-4">
+                            <div class="h-100 p-4 text-center">
+                                <div class="mb-3 d-flex justify-content-center">
+                                    <img src="./images/img3.svg" alt="Durable premium materials" class="icon-svg" />
+                                </div>
+                                <h5 class="mb-2">Durable, premium materials</h5>
+                                <p class="mb-0">
+                                    We use materials like sustainably-forested wood,
+                                    strengthened steel hardware, and top-grain Italian<br>
+                                    leather.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Shop by Collection -->
+        <section class="shop-products">
+            <div class="container-fluid">
+                <!-- TOP ROW -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="text-fp mb-0">Shop by Collection</h3>
+
+                    <div class="collection-nav d-flex gap-0">
+                        <button class="collection-nav-btn js-prev" type="button">
+                            <i class="fa fa-angle-left"></i>
+                        </button>
+                        <button class="collection-nav-btn js-next" type="button">
+                            <i class="fa fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <div class="image-wrapper">
+                                    <img src="./images/collection-plant-2.jpg" class="img-fluid">
+                                    <button class="arrow-btn">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 19L19 5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5 5H19V19" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h6 class="mt-3 mb-2">All Plants</h6>
+                                <small>14 items</small>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <div class="image-wrapper">
+                                    <img src="./images/collection-plant-3.jpg" class="img-fluid">
+                                    <button class="arrow-btn">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 19L19 5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5 5H19V19" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h6 class="mt-3 mb-2">Pet-Friendly Plants</h6>
+                                <small>14 items</small>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <div class="image-wrapper">
+                                    <img src="./images/collection-plant-4.jpg" class="img-fluid">
+                                    <button class="arrow-btn">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 19L19 5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5 5H19V19" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h6 class="mt-3 mb-2">For Beginners</h6>
+                                <small>14 items</small>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <div class="image-wrapper">
+                                    <img src="./images/collection-plant-5.jpg" class="img-fluid">
+                                    <button class="arrow-btn">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 19L19 5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5 5H19V19" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h6 class="mt-3 mb-2">Flowering Plants</h6>
+                                <small>14 items</small>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <div class="image-wrapper">
+                                    <img src="./images/collection-plant-6.jpg" class="img-fluid">
+                                    <button class="arrow-btn">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 19L19 5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5 5H19V19" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h6 class="mt-3 mb-2">Decor Planters</h6>
+                                <small>14 items</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summer guide section -->
+        <section class="summer-guide-section">
+            <div class="row align-items-center">
+                <!-- Text Column -->
+                <div
+                    class="col-lg-6 col-md-12 text-column d-flex flex-column justify-content-center order-lg-1 order-2">
+                    <span class="section-label fw-bold mb-3 d-block">GET THE GROW-HOW</span>
+                    <h2 class="mb-4">Ultimate Guide to<br>Summer Plant Care</h2>
+                    <p class="mb-4">
+                        Keep your plants healthy and thriving this summer! Get pro tips from our expert Grow-How® Team.
+                    </p>
+                    <a class="btn btn-success btn-lg">Summer Care Tips</a>
+                </div>
+
+
+                <!-- Image Column -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 order-lg-2 order-1">
+                    <div class="summer-guide-img-container">
+                        <img src="./images/collection-plant-7.jpg" class="w-100 h-100 object-fit-cover"
+                            alt="Summer Plant Care">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Line -->
+        <div class="container-fluid">
+            <div class="line"></div>
+        </div>
+        <!-- Ecomus your space -->
+        <section class="ecomus-space py-4">
+            <div class="container-fluid pt-4">
+
+                <!-- SECTION TITLE -->
+                <div>
+                    <h3 class="ecomus-title">Show us how you #EcomusYourSpace!</h3>
+                </div>
+
+                <!-- IMAGE GALLERY -->
+                <div class="ecomus-gallery">
+
+                    <div class="ecomus-card">
+                        <div class="ecomus-image-wrapper">
+                            <img src="./images/gallery-plant-1.jpg" alt="Ecomus space">
+                            <button class="ecomus-action-btn">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="ecomus-card">
+                        <div class="ecomus-image-wrapper">
+                            <img src="./images/gallery-plant-2.jpg" alt="Ecomus space">
+                            <button class="ecomus-action-btn">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="ecomus-card">
+                        <div class="ecomus-image-wrapper">
+                            <img src="./images/gallery-plant-3.jpg" alt="Ecomus space">
+                            <button class="ecomus-action-btn">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="ecomus-card">
+                        <div class="ecomus-image-wrapper">
+                            <img src="./images/gallery-plant-4.jpg" alt="Ecomus space">
+                            <button class="ecomus-action-btn">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ecomus-card">
+                        <div class="ecomus-image-wrapper">
+                            <img src="./images/gallery-plant-5.jpg" alt="Ecomus space">
+                            <button class="ecomus-action-btn">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Plant footer -->
+    <footer class="hp-footer">
+        <!-- Main Footer Content -->
+        <div class="hp-footer-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Help Section -->
+                    <div class="col-xl-3 col-md-6 col-12 hp-border-right">
+                        <div class="hp-footer-section help-section">
+                            <h5 class="hp-footer-title">Help</h5>
+                            <ul class="hp-footer-list">
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">Privacy Policy</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">Returns + Exchanges</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">Shipping</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">Terms & Conditions</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">FAQ's</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">Compare</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">My Wishlist</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- About Us Section -->
+                    <div class="col-xl-3 col-md-6 col-12 hp-border-right">
+                        <div class="hp-footer-section">
+                            <h5 class="hp-footer-title">About us</h5>
+                            <ul class="hp-footer-list">
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">Our Story</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">Visit Our Store</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">Contact Us</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">Account</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Find Us Section -->
+                    <div class="col-xl-3 col-md-6 col-12 hp-border-right">
+                        <div class="hp-footer-section">
+                            <h5 class="hp-footer-title">Find us</h5>
+                            <ul class="hp-footer-list">
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link">Find a location nearest you.</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="#" class="hp-footer-link underlined">See Our Stores</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="tel:0889421299" class="hp-footer-link">(08) 8942 1299</a>
+                                </li>
+                                <li class="hp-footer-item">
+                                    <a href="mailto:hello@domain.com" class="hp-footer-link">hello@domain.com</a>
+                                </li>
+                                <li class="hp-footer-item icon-edit">
+                                    <div class="hp-social-icons">
+                                        <a href="#" class="hp-social-icon facebook">
+                                            <i class="fa fa-facebook-f"></i>
+                                        </a>
+
+                                        <a href="#" class="hp-social-icon twitter">
+                                            <i class="bi bi-twitter-x"></i>
+                                        </a>
+
+                                        <a href="#" class="hp-social-icon instagram">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+
+                                        <a href="#" class="hp-social-icon tiktok">
+                                            <i class="bi bi-tiktok"></i>
+                                        </a>
+
+                                        <a href="#" class="hp-social-icon pinterest">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Section -->
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="hp-footer-section">
+                            <h5 class="hp-footer-title">Sign Up for Email</h5>
+                            <p class="hp-newsletter-desc">
+                                Sign up to get first dibs on new arrivals, sales,
+                                exclusive content, events and more!
+                            </p>
+
+                            <form class="hp-newsletter-form">
+                                <div class="hp-input-group">
+                                    <input type="email" class="hp-form-input" placeholder="Enter your email..."
+                                        required>
+                                    <button class="hp-subscribe-btn" type="submit">
+                                        Subscribe
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 19L19 5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5 5H19V19" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+
+                            <!-- Currency & Language -->
+                            <div class="d-flex align-items-center currency-language-wrapper" style="gap:40px;">
+                                <div class="mb-3 position-relative" style="width:55px;">
+                                    <select class="form-select custom-select">
+                                        <option>USD $ | United States</option>
+                                        <option>EUR € | France</option>
+                                        <option>EUR € | Germany</option>
+                                        <option>VND ₫ | Vietnam</option>
+                                    </select>
+                                    <!-- arrow -->
+                                    <i class="fa fa-angle-down custom-arrow"></i>
+                                </div>
+                                <div class="mb-3 position-relative" style="width:90px;">
+                                    <select class="form-select custom-select1">
+                                        <option>English</option>
+                                        <option>Français</option>
+                                        <option>Deutsch</option>
+                                        <option>Pусский</option>
+                                    </select>
+                                    <!-- arrow -->
+                                    <i class="fa fa-angle-down custom-arrow1"></i>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="hp-footer-bottom">
+            <div class="hp-footer-flex-container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="hp-copyright-text ">
+                            © 2025 Home Plant Store. All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="hp-payment-methods text-md-end">
+                            <img src="./images/visa.png" alt="Visa" class="hp-payment-icon">
+                            <img src="./images/img-1.png" alt="Mastercard" class="hp-payment-icon">
+                            <img src="./images/img-2.png" alt="American Express" class="hp-payment-icon">
+                            <img src="./images/img-3.png" alt="PayPal" class="hp-payment-icon">
+                            <img src="./images/img-4.png" alt="Apple Pay" class="hp-payment-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        
+        document.querySelectorAll('.mySwiper').forEach((swiperEl) => {
+            const swiperInstance = new Swiper(swiperEl, {
+                slidesPerView: 'auto',
+                grabCursor: true,
+                speed: 900,
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 6,
+                spaceBetween: 5
+            });
+
+            const prevBtn = swiperEl.parentElement.querySelector('.js-prev');
+            const nextBtn = swiperEl.parentElement.querySelector('.js-next');
+
+            if (prevBtn) prevBtn.addEventListener('click', () => swiperInstance.slidePrev());
+            if (nextBtn) nextBtn.addEventListener('click', () => swiperInstance.slideNext());
+        });
+    </script>
+
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="project_bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</body>
 </html>
