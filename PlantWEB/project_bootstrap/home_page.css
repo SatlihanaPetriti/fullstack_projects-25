@@ -532,7 +532,7 @@ html, body {
 
 
 /*============= Featured Products  ============== */
-/* Stack all main images */
+
 .image-wrapper .product-img {
     position: absolute;
     top: 0;
@@ -546,15 +546,6 @@ html, body {
     z-index: 1;
 }
 
-/* Show image based on selected radio */
-#collection-1-white:checked ~ .img-white,
-#collection-1-black:checked ~ .img-black,
-#collection-1-brown:checked ~ .img-brown,
-#collection-2-white:checked ~ .img-white,
-#collection-2-black:checked ~ .img-black,
-#collection-2-brown:checked ~ .img-brown {
-    display: block;
-}
 
 /* Hover image */
 .hover-img {
@@ -576,21 +567,21 @@ html, body {
 /* Action buttons */
 .product-actions {
     position: absolute;
-    bottom: 30px;            
-    left: 50%;              
-    transform: translateX(-50%); 
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 6px;                 
-    opacity: 0;               
+    gap: 6px;
+    opacity: 0;
     transition: all 0.3s ease;
     z-index: 5;
 }
 
 .image-wrapper:hover .product-actions {
-    opacity: 1; /
+    opacity: 1;
 }
 
-
+/* Buttons */
 .action-btn {
     width: 40px;
     height: 40px;
@@ -632,11 +623,20 @@ html, body {
     cursor: pointer;
     border: 1px solid #ccc;
 }
-
 /* Dot colors */
 .color-swatches-horizontal .swatch-black { background-color: black; }
 .color-swatches-horizontal .swatch-white { background-color: white; }
 .color-swatches-horizontal .swatch-brown { background-color: rgb(151, 121, 69); }
+
+/*  image based on selected radio */
+#collection-1-white:checked ~ .img-white,
+#collection-1-black:checked ~ .img-black,
+#collection-1-brown:checked ~ .img-brown,
+#collection-2-white:checked ~ .img-white,
+#collection-2-black:checked ~ .img-black,
+#collection-2-brown:checked ~ .img-brown {
+    display: block;
+}
 
 /* Highlight active dot */
 #collection-1-black:checked ~ .color-swatches-horizontal label[for="collection-1-black"],
@@ -645,7 +645,7 @@ html, body {
 #collection-2-black:checked ~ .color-swatches-horizontal label[for="collection-2-black"],
 #collection-2-white:checked ~ .color-swatches-horizontal label[for="collection-2-white"],
 #collection-2-brown:checked ~ .color-swatches-horizontal label[for="collection-2-brown"] {
-    border: none solid #172e22;
+    border: 2px solid #172e22;
 }
 
 

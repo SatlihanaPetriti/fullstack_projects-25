@@ -148,7 +148,7 @@
         <!-- Menu: slider -->
         <section>
             <div id="plantCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="3000"
-                data-bs-wrap="true" >
+                data-bs-wrap="true">
 
                 <!-- Pagination bullets -->
                 <div class="carousel-indicators plant-indicators">
@@ -206,7 +206,7 @@
             </div>
         </section>
 
-        <!-- Featured Section -->
+        <!-- AS FEATURED IN -->
         <section class="featured-section">
             <div class="container-fluid text-center pt-5 pb-5">
                 <div class="featured-title mb-5">
@@ -369,7 +369,7 @@
             <div class="container-fluid">
                 <!-- TOP ROW -->
                 <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="text-fp mb-0">Shop by Collection</h3>
+                    <h3 class="text-fp mb-0">Featured Products</h3>
 
                     <div class="collection-nav d-flex gap-0">
                         <button class="collection-nav-btn js-prev" type="button">
@@ -385,14 +385,14 @@
                     <div class="swiper-wrapper">
 
                         <!-- Slide 1 -->
-                        
+
                         <div class="swiper-slide">
                             <div class="collection-card">
                                 <div class="image-wrapper position-relative">
                                     <!-- Radio buttons -->
-                                    <input type="radio" name="collection-2-color" id="collection-2-black" checked>
-                                    <input type="radio" name="collection-2-color" id="collection-2-brown">
-                                    <input type="radio" name="collection-2-color" id="collection-2-white">
+                                    <input type="radio" name="collection-1-color" id="collection-1-black" checked>
+                                    <input type="radio" name="collection-1-color" id="collection-1-brown">
+                                    <input type="radio" name="collection-1-color" id="collection-1-white">
 
                                     <!-- Main images -->
                                     <img src="./images/plant-1.jpg" class="img-fluid product-img img-black">
@@ -418,12 +418,53 @@
 
                                 <!-- Color swatches -->
                                 <div class="color-swatches-horizontal mt-2">
+                                    <label for="collection-1-black" class="swatch swatch-black"></label>
+                                    <label for="collection-1-brown" class="swatch swatch-brown"></label>
+                                    <label for="collection-1-white" class="swatch swatch-white"></label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="collection-card">
+                                <div class="image-wrapper position-relative">
+
+                                    <!-- Radio buttons (UNIQUE) -->
+                                    <input type="radio" name="collection-2-color" id="collection-2-black" checked>
+                                    <input type="radio" name="collection-2-color" id="collection-2-brown">
+                                    <input type="radio" name="collection-2-color" id="collection-2-white">
+
+                                    <!-- Main images -->
+                                    <img src="./images/plant-5.jpg" class="img-fluid product-img img-black">
+                                    <img src="./images/plant-6.jpg" class="img-fluid product-img img-brown">
+                                    <img src="./images/plant-7.jpg" class="img-fluid product-img img-white">
+
+                                    <!-- Hover image -->
+                                    <img src="./images/plant-8.jpg" class="img-fluid hover-img">
+
+                                    <!-- Action buttons -->
+                                    <div class="product-actions">
+                                        <button class="action-btn"><i
+                                                class="material-icons">shopping_basket</i></button>
+                                        <button class="action-btn"><i class="fa fa-heart"></i></button>
+                                        <button class="action-btn"><i class="material-icons">compare_arrows</i></button>
+                                        <button class="action-btn"><i class="fa fa-eye"></i></button>
+                                    </div>
+                                </div>
+
+                                <!-- Product info -->
+                                <h6 class="mt-3 mb-1">Snake Plant</h6>
+                                <small>$45.00</small>
+
+                                <!-- Color swatches -->
+                                <div class="color-swatches-horizontal mt-2">
                                     <label for="collection-2-black" class="swatch swatch-black"></label>
                                     <label for="collection-2-brown" class="swatch swatch-brown"></label>
                                     <label for="collection-2-white" class="swatch swatch-white"></label>
                                 </div>
                             </div>
                         </div>
+
 
                     </div>
                     <div class="swiper-pagination"></div>
@@ -752,11 +793,11 @@
     </main>
     <!-- Plant footer -->
     <footer class="hp-footer">
-        <!-- Main Footer Content -->
+        <!-- Main footer content -->
         <div class="hp-footer-content">
             <div class="container-fluid">
                 <div class="row">
-                    <!-- Help Section -->
+                    <!-- Help column -->
                     <div class="col-xl-3 col-md-6 col-12 hp-border-right">
                         <div class="hp-footer-section help-section">
                             <h5 class="hp-footer-title">Help</h5>
@@ -786,7 +827,7 @@
                         </div>
                     </div>
 
-                    <!-- About Us Section -->
+                    <!-- About Us column -->
                     <div class="col-xl-3 col-md-6 col-12 hp-border-right">
                         <div class="hp-footer-section">
                             <h5 class="hp-footer-title">About us</h5>
@@ -807,7 +848,7 @@
                         </div>
                     </div>
 
-                    <!-- Find Us Section -->
+                    <!-- Find Us column -->
                     <div class="col-xl-3 col-md-6 col-12 hp-border-right">
                         <div class="hp-footer-section">
                             <h5 class="hp-footer-title">Find us</h5>
@@ -852,7 +893,7 @@
                         </div>
                     </div>
 
-                    <!-- Newsletter Section -->
+                    <!-- Newsletter column -->
                     <div class="col-xl-3 col-md-6 col-12">
                         <div class="hp-footer-section">
                             <h5 class="hp-footer-title">Sign Up for Email</h5>
@@ -933,7 +974,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
-        
+
         document.querySelectorAll('.mySwiper').forEach((swiperEl) => {
             const swiperInstance = new Swiper(swiperEl, {
                 slidesPerView: 'auto',
@@ -957,4 +998,5 @@
     <script src="project_bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
+
 </html>
