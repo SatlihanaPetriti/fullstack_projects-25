@@ -213,7 +213,7 @@ html, body {
     transition: max-height 0.5s ease, padding 0.5s ease;
 }
 .announcement-container {
-    max-height: 80px; /* same as your bar height */
+    max-height: 80px; 
     transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
