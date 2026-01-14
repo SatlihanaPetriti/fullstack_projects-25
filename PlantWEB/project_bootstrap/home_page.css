@@ -527,12 +527,22 @@ html, body {
     
 }
 .featured-products1{
-    background-color: rgb(245, 245, 236);
+    background-color: #f5f5ec;
 }
 
 
 /*============= Featured Products  ============== */
+.featured-products .container-fluid {
+    padding-top: 50px;    
+    padding-bottom: 50px;
+    margin: 0;
+    background-color: #e7ecd2;
+    font-family: "Albert Sans", sans-serif; 
+    padding-left: 15px !important;
+    padding-right: 0 !important;
+}
 
+/* Stack all main images */
 .image-wrapper .product-img {
     position: absolute;
     top: 0;
@@ -542,10 +552,37 @@ html, body {
     object-fit: cover;
     display: none;
     border-radius: 10px;
-    transition: opacity 0.3s ease;
+    transition: all 0.4s ease-in-out;
     z-index: 1;
 }
 
+/* Show image based on selected radio */
+#collection-1-white:checked ~ .img-white,
+#collection-1-black:checked ~ .img-black,
+#collection-1-brown:checked ~ .img-brown,
+#collection-2-white:checked ~ .img-white,
+#collection-2-black:checked ~ .img-black,
+#collection-2-brown:checked ~ .img-brown,
+#collection-3-white:checked ~ .img-white,
+#collection-3-black:checked ~ .img-black,
+#collection-3-brown:checked ~ .img-brown,
+#collection-4-white:checked ~ .img-white,
+#collection-4-black:checked ~ .img-black,
+#collection-4-brown:checked ~ .img-brown,
+#collection-5-white:checked ~ .img-white,
+#collection-5-black:checked ~ .img-black,
+#collection-5-brown:checked ~ .img-brown,
+#collection-6-white:checked ~ .img-white,
+#collection-6-black:checked ~ .img-black,
+#collection-6-brown:checked ~ .img-brown,
+#collection-7-white:checked ~ .img-white,
+#collection-7-black:checked ~ .img-black,
+#collection-7-brown:checked ~ .img-brown,
+#collection-8-white:checked ~ .img-white,
+#collection-8-black:checked ~ .img-black,
+#collection-8-brown:checked ~ .img-brown {
+    display: block;
+}
 
 /* Hover image */
 .hover-img {
@@ -564,7 +601,7 @@ html, body {
     opacity: 1;
 }
 
-/* Action buttons */
+/* Action buttons (hidden by default) */
 .product-actions {
     position: absolute;
     bottom: 30px;
@@ -573,38 +610,69 @@ html, body {
     display: flex;
     gap: 6px;
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: opacity 0.4s ease;
     z-index: 5;
 }
 
-.image-wrapper:hover .product-actions {
+/* Show buttons on hover of the image */
+.image-wrapper:hover .product-actions { 
+    opacity: 1; 
+}
+
+/* Show buttons when a color radio is checked */
+#collection-1-white:checked ~ .product-actions,
+#collection-1-black:checked ~ .product-actions,
+#collection-1-brown:checked ~ .product-actions,
+#collection-2-white:checked ~ .product-actions,
+#collection-2-black:checked ~ .product-actions,
+#collection-2-brown:checked ~ .product-actions,
+#collection-3-white:checked ~ .product-actions,
+#collection-3-black:checked ~ .product-actions,
+#collection-3-brown:checked ~ .product-actions,
+#collection-4-white:checked ~ .product-actions,
+#collection-4-black:checked ~ .product-actions,
+#collection-4-brown:checked ~ .product-actions,
+#collection-5-white:checked ~ .product-actions,
+#collection-5-black:checked ~ .product-actions,
+#collection-5-brown:checked ~ .product-actions,
+#collection-6-white:checked ~ .product-actions,
+#collection-6-black:checked ~ .product-actions,
+#collection-6-brown:checked ~ .product-actions,
+#collection-7-white:checked ~ .product-actions,
+#collection-7-black:checked ~ .product-actions,
+#collection-7-brown:checked ~ .product-actions,
+#collection-8-white:checked ~ .product-actions,
+#collection-8-black:checked ~ .product-actions,
+#collection-8-brown:checked ~ .product-actions {
     opacity: 1;
 }
 
-/* Buttons */
+/* Buttons on the image */
 .action-btn {
     width: 40px;
     height: 40px;
     border-radius: 5px;
-    border: none;
-    background-color: #fff;
+    border: 2px solid white;  /* white border in default */
+    background-color: white;   /* white fill */
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .action-btn i {
     font-size: 18px;
-    color: #172e22;
+    color: black;  /* icon color */
 }
 
 .action-btn:hover {
-    background-color: #172e22;
+    background-color: black;  /* fill black on hover */
+    border: 2px solid white;  /* keep border white */
 }
 
 .action-btn:hover i {
-    color: #fff;
+    color: white;  /* icon turns white */
 }
 
 /* Horizontal swatches */
@@ -623,20 +691,29 @@ html, body {
     cursor: pointer;
     border: 1px solid #ccc;
 }
+.image-wrapper .img-default {
+    display: block;
+    z-index: 0; /* behind the main images */
+}
+/* Keep main images hidden until radio is selected */
+.image-wrapper .img-black,
+.image-wrapper .img-brown,
+.image-wrapper .img-white {
+    display: none;
+}
+
+/* Show main images when radio is selected (your existing logic) */
+#collection-1-black:checked ~ .img-black,
+#collection-1-brown:checked ~ .img-brown,
+#collection-1-white:checked ~ .img-white {
+    display: block;
+    z-index: 1; /* above default image */
+}
+
 /* Dot colors */
 .color-swatches-horizontal .swatch-black { background-color: black; }
 .color-swatches-horizontal .swatch-white { background-color: white; }
-.color-swatches-horizontal .swatch-brown { background-color: rgb(151, 121, 69); }
-
-/*  image based on selected radio */
-#collection-1-white:checked ~ .img-white,
-#collection-1-black:checked ~ .img-black,
-#collection-1-brown:checked ~ .img-brown,
-#collection-2-white:checked ~ .img-white,
-#collection-2-black:checked ~ .img-black,
-#collection-2-brown:checked ~ .img-brown {
-    display: block;
-}
+.color-swatches-horizontal .swatch-brown { background-color: #977945; }
 
 /* Highlight active dot */
 #collection-1-black:checked ~ .color-swatches-horizontal label[for="collection-1-black"],
@@ -644,8 +721,26 @@ html, body {
 #collection-1-brown:checked ~ .color-swatches-horizontal label[for="collection-1-brown"],
 #collection-2-black:checked ~ .color-swatches-horizontal label[for="collection-2-black"],
 #collection-2-white:checked ~ .color-swatches-horizontal label[for="collection-2-white"],
-#collection-2-brown:checked ~ .color-swatches-horizontal label[for="collection-2-brown"] {
-    border: 2px solid #172e22;
+#collection-2-brown:checked ~ .color-swatches-horizontal label[for="collection-2-brown"],
+#collection-3-black:checked ~ .color-swatches-horizontal label[for="collection-3-black"],
+#collection-3-white:checked ~ .color-swatches-horizontal label[for="collection-3-white"],
+#collection-3-brown:checked ~ .color-swatches-horizontal label[for="collection-3-brown"],
+#collection-4-black:checked ~ .color-swatches-horizontal label[for="collection-4-black"],
+#collection-4-white:checked ~ .color-swatches-horizontal label[for="collection-4-white"],
+#collection-4-brown:checked ~ .color-swatches-horizontal label[for="collection-4-brown"],
+#collection-5-black:checked ~ .color-swatches-horizontal label[for="collection-5-black"],
+#collection-5-white:checked ~ .color-swatches-horizontal label[for="collection-5-white"],
+#collection-5-brown:checked ~ .color-swatches-horizontal label[for="collection-5-brown"],
+#collection-6-black:checked ~ .color-swatches-horizontal label[for="collection-6-black"],
+#collection-6-white:checked ~ .color-swatches-horizontal label[for="collection-6-white"],
+#collection-6-brown:checked ~ .color-swatches-horizontal label[for="collection-6-brown"],
+#collection-7-black:checked ~ .color-swatches-horizontal label[for="collection-7-black"],
+#collection-7-white:checked ~ .color-swatches-horizontal label[for="collection-7-white"],
+#collection-7-brown:checked ~ .color-swatches-horizontal label[for="collection-7-brown"],
+#collection-8-black:checked ~ .color-swatches-horizontal label[for="collection-8-black"],
+#collection-8-white:checked ~ .color-swatches-horizontal label[for="collection-8-white"],
+#collection-8-brown:checked ~ .color-swatches-horizontal label[for="collection-8-brown"] {
+    border: 2px solid #172e22; /* highlight active swatch */
 }
 
 
