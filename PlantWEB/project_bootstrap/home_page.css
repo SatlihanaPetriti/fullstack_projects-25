@@ -702,7 +702,7 @@ html, body {
     display: none;
 }
 
-/* Show main images when radio is selected (your existing logic) */
+/* Show main images when radio is selected*/
 #collection-1-black:checked ~ .img-black,
 #collection-1-brown:checked ~ .img-brown,
 #collection-1-white:checked ~ .img-white {
