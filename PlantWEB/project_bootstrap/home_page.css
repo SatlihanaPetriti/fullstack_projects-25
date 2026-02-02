@@ -110,7 +110,7 @@ section {
 @font-face {
     font-family: 'Albert Sans';
     font-style: normal;
-    font-weight:unset;
+    font-weight: unset;
     font-display: swap;
     src: url('https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZbYFc.woff2') format('woff2');
 }
@@ -118,8 +118,10 @@ section {
 body {
     background-color: #F5F5EC;
 }
-html, body {
-  overflow-x: hidden;
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 
@@ -212,8 +214,9 @@ html, body {
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.5s ease;
 }
+
 .announcement-container {
-    max-height: 80px; 
+    max-height: 80px;
     transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
@@ -236,9 +239,11 @@ html, body {
     display: flex;
     align-items: center;
 }
+
 .container-full {
     width: 100%;
 }
+
 .px-15 {
     padding-left: 30px;
     padding-right: 30px;
@@ -250,12 +255,13 @@ html, body {
 .site-logo img {
     display: block;
 }
+
 .nav-link {
     color: #172e22;
     font-family: 'Albert Sans', sans-serif;
-    display: inline-flex;       
-    align-items: center; 
-    font-weight:500;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
     font-size: 16px;
     align-items: center;
     gap: 7px;
@@ -263,18 +269,20 @@ html, body {
 
 /* Dropdown background */
 .site-menu .dropdown-menu {
-    background-color:white;   
+    background-color: white;
     border: none;
     border-radius: 0;
     padding: 0.5rem 0;
 }
+
 #header .nav-icon .icon {
-    color: #172e22;  
-    width: 25px; 
+    color: #172e22;
+    width: 25px;
 }
+
 #header .nav-icon {
     display: flex;
-    gap: 15px;  
+    gap: 15px;
     align-items: center;
 }
 
@@ -289,6 +297,7 @@ html, body {
 .carousel-caption span {
     display: inline-block;
 }
+
 .carousel-inner,
 .carousel-inner .box-content,
 .carousel-inner .box-content *:not(i) {
@@ -311,7 +320,7 @@ html, body {
     font-weight: 400;
     font-size: 80px;
     line-height: 96px;
-  
+
 }
 
 .box-content h1 {
@@ -324,7 +333,7 @@ html, body {
     border: 1px solid #172e22;
     padding: 0 30px !important;
     font-size: 18px;
-    line-height: 50px;  
+    line-height: 50px;
     transition: all 0.3s ease;
 }
 
@@ -348,11 +357,11 @@ html, body {
 /* BRANDS*/
 /* "AS FEATURED IN" styling */
 .featured-title {
-  font-family: 'Albert Sans', sans-serif;
-  color: #214332;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 15px;
+    font-family: 'Albert Sans', sans-serif;
+    color: #214332;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 /*=============== TESTIMONIAL ===============*/
@@ -369,21 +378,24 @@ html, body {
     position: relative;
     min-height: 580px;
 }
+
 /*LEFT*/
 .col-md-7.text-white {
-    padding-left: 80px; 
-    padding-top: 60px; 
+    padding-left: 80px;
+    padding-top: 60px;
 }
+
 /*RIGHT*/
 .col-md-5 {
-    padding-right: 80px; 
-    padding-top: 40px; 
+    padding-right: 80px;
+    padding-top: 40px;
 }
+
 /* QUOTE ICON */
 .icon-position {
-    transform: translateY(-20px); 
-    color:#B5B5B5;
-    margin-bottom: 14px; 
+    transform: translateY(-20px);
+    color: #B5B5B5;
+    margin-bottom: 14px;
     display: inline-block;
 }
 
@@ -394,7 +406,7 @@ html, body {
     font-size: 14px;
     letter-spacing: 1.5px;
     line-height: 22.4px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     text-transform: uppercase;
 }
 
@@ -414,13 +426,13 @@ html, body {
 .testimonial-text {
     font-size: 28px;
     line-height: 44.8px;
-    width: 120%;  
+    width: 120%;
 }
 
 /* AUTHOR INFO */
 .author-info {
     margin-top: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 .author-name {
@@ -442,6 +454,7 @@ html, body {
     height: auto;
     border-radius: 10px;
 }
+
 .image-1 {
     width: 353px;
     margin-left: 120px;
@@ -452,30 +465,33 @@ html, body {
 /* IMAGE ZOOM */
 .image-zoom {
     overflow: hidden;
-    border: none; 
-    border-radius: 10px; 
+    border: none;
+    border-radius: 10px;
 }
+
 .image-zoom img {
     display: block;
     width: 100%;
-    transition: transform 0.5s ease; 
+    transition: transform 0.5s ease;
 }
 
 .image-zoom:hover img {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
+
 /*Testimonial slider*/
 
 #testimonialSlider {
     position: relative;
 }
+
 /* Base arrow style */
 #testimonialSlider .carousel-control-prev,
 #testimonialSlider .carousel-control-next {
     width: 44px;
     height: 44px;
     top: auto;
-    bottom:-35px;   
+    bottom: -35px;
     transform: none;
     opacity: 1;
 }
@@ -487,7 +503,7 @@ html, body {
 
 /* spacing between arrows */
 #testimonialSlider .carousel-control-next {
-    left: 100px;          
+    left: 100px;
     right: auto;
 }
 
@@ -500,44 +516,48 @@ html, body {
     background-color: transparent;
     border: 1.5px solid #B5B5B5 !important;
     border-radius: 50%;
-    background-image: none; 
+    background-image: none;
 }
-#testimonialSlider .carousel-control-prev-icon i{
+
+#testimonialSlider .carousel-control-prev-icon i {
     font-size: 20px;
-    position: relative; 
-    top: 5px; 
-    right:1px;
+    position: relative;
+    top: 5px;
+    right: 1px;
 }
 
 #testimonialSlider .carousel-control-next-icon i {
     font-size: 20px;
     position: relative;
-    top: 5px; 
-    left:1px;
+    top: 5px;
+    left: 1px;
 }
+
 /* Hover effect: optional */
 #testimonialSlider .carousel-control-prev:hover i,
 #testimonialSlider .carousel-control-next:hover i {
-    color: #000; 
+    color: #000;
 }
+
 #testimonialSlider .carousel-control-prev-icon:hover,
 #testimonialSlider .carousel-control-next-icon:hover {
     background-color: white;
 
-    
+
 }
-.featured-products1{
+
+.featured-products1 {
     background-color: #f5f5ec;
 }
 
 
 /*============= Featured Products  ============== */
 .featured-products .container-fluid {
-    padding-top: 50px;    
+    padding-top: 50px;
     padding-bottom: 50px;
     margin: 0;
     background-color: #e7ecd2;
-    font-family: "Albert Sans", sans-serif; 
+    font-family: "Albert Sans", sans-serif;
     padding-left: 15px !important;
     padding-right: 0 !important;
 }
@@ -557,30 +577,30 @@ html, body {
 }
 
 /* Show image based on selected radio */
-#collection-1-white:checked ~ .img-white,
-#collection-1-black:checked ~ .img-black,
-#collection-1-brown:checked ~ .img-brown,
-#collection-2-white:checked ~ .img-white,
-#collection-2-black:checked ~ .img-black,
-#collection-2-brown:checked ~ .img-brown,
-#collection-3-white:checked ~ .img-white,
-#collection-3-black:checked ~ .img-black,
-#collection-3-brown:checked ~ .img-brown,
-#collection-4-white:checked ~ .img-white,
-#collection-4-black:checked ~ .img-black,
-#collection-4-brown:checked ~ .img-brown,
-#collection-5-white:checked ~ .img-white,
-#collection-5-black:checked ~ .img-black,
-#collection-5-brown:checked ~ .img-brown,
-#collection-6-white:checked ~ .img-white,
-#collection-6-black:checked ~ .img-black,
-#collection-6-brown:checked ~ .img-brown,
-#collection-7-white:checked ~ .img-white,
-#collection-7-black:checked ~ .img-black,
-#collection-7-brown:checked ~ .img-brown,
-#collection-8-white:checked ~ .img-white,
-#collection-8-black:checked ~ .img-black,
-#collection-8-brown:checked ~ .img-brown {
+#collection-1-white:checked~.img-white,
+#collection-1-black:checked~.img-black,
+#collection-1-brown:checked~.img-brown,
+#collection-2-white:checked~.img-white,
+#collection-2-black:checked~.img-black,
+#collection-2-brown:checked~.img-brown,
+#collection-3-white:checked~.img-white,
+#collection-3-black:checked~.img-black,
+#collection-3-brown:checked~.img-brown,
+#collection-4-white:checked~.img-white,
+#collection-4-black:checked~.img-black,
+#collection-4-brown:checked~.img-brown,
+#collection-5-white:checked~.img-white,
+#collection-5-black:checked~.img-black,
+#collection-5-brown:checked~.img-brown,
+#collection-6-white:checked~.img-white,
+#collection-6-black:checked~.img-black,
+#collection-6-brown:checked~.img-brown,
+#collection-7-white:checked~.img-white,
+#collection-7-black:checked~.img-black,
+#collection-7-brown:checked~.img-brown,
+#collection-8-white:checked~.img-white,
+#collection-8-black:checked~.img-black,
+#collection-8-brown:checked~.img-brown {
     display: block;
 }
 
@@ -615,35 +635,35 @@ html, body {
 }
 
 /* Show buttons on hover of the image */
-.image-wrapper:hover .product-actions { 
-    opacity: 1; 
+.image-wrapper:hover .product-actions {
+    opacity: 1;
 }
 
 /* Show buttons when a color radio is checked */
-#collection-1-white:checked ~ .product-actions,
-#collection-1-black:checked ~ .product-actions,
-#collection-1-brown:checked ~ .product-actions,
-#collection-2-white:checked ~ .product-actions,
-#collection-2-black:checked ~ .product-actions,
-#collection-2-brown:checked ~ .product-actions,
-#collection-3-white:checked ~ .product-actions,
-#collection-3-black:checked ~ .product-actions,
-#collection-3-brown:checked ~ .product-actions,
-#collection-4-white:checked ~ .product-actions,
-#collection-4-black:checked ~ .product-actions,
-#collection-4-brown:checked ~ .product-actions,
-#collection-5-white:checked ~ .product-actions,
-#collection-5-black:checked ~ .product-actions,
-#collection-5-brown:checked ~ .product-actions,
-#collection-6-white:checked ~ .product-actions,
-#collection-6-black:checked ~ .product-actions,
-#collection-6-brown:checked ~ .product-actions,
-#collection-7-white:checked ~ .product-actions,
-#collection-7-black:checked ~ .product-actions,
-#collection-7-brown:checked ~ .product-actions,
-#collection-8-white:checked ~ .product-actions,
-#collection-8-black:checked ~ .product-actions,
-#collection-8-brown:checked ~ .product-actions {
+#collection-1-white:checked~.product-actions,
+#collection-1-black:checked~.product-actions,
+#collection-1-brown:checked~.product-actions,
+#collection-2-white:checked~.product-actions,
+#collection-2-black:checked~.product-actions,
+#collection-2-brown:checked~.product-actions,
+#collection-3-white:checked~.product-actions,
+#collection-3-black:checked~.product-actions,
+#collection-3-brown:checked~.product-actions,
+#collection-4-white:checked~.product-actions,
+#collection-4-black:checked~.product-actions,
+#collection-4-brown:checked~.product-actions,
+#collection-5-white:checked~.product-actions,
+#collection-5-black:checked~.product-actions,
+#collection-5-brown:checked~.product-actions,
+#collection-6-white:checked~.product-actions,
+#collection-6-black:checked~.product-actions,
+#collection-6-brown:checked~.product-actions,
+#collection-7-white:checked~.product-actions,
+#collection-7-black:checked~.product-actions,
+#collection-7-brown:checked~.product-actions,
+#collection-8-white:checked~.product-actions,
+#collection-8-black:checked~.product-actions,
+#collection-8-brown:checked~.product-actions {
     opacity: 1;
 }
 
@@ -652,8 +672,10 @@ html, body {
     width: 40px;
     height: 40px;
     border-radius: 5px;
-    border: 2px solid white;  /* white border in default */
-    background-color: white;   /* white fill */
+    border: 2px solid white;
+    /* white border in default */
+    background-color: white;
+    /* white fill */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -663,16 +685,20 @@ html, body {
 
 .action-btn i {
     font-size: 18px;
-    color: black;  /* icon color */
+    color: black;
+    /* icon color */
 }
 
 .action-btn:hover {
-    background-color: black;  /* fill black on hover */
-    border: 2px solid white;  /* keep border white */
+    background-color: black;
+    /* fill black on hover */
+    border: 2px solid white;
+    /* keep border white */
 }
 
 .action-btn:hover i {
-    color: white;  /* icon turns white */
+    color: white;
+    /* icon turns white */
 }
 
 /* Horizontal swatches */
@@ -691,10 +717,13 @@ html, body {
     cursor: pointer;
     border: 1px solid #ccc;
 }
+
 .image-wrapper .img-default {
     display: block;
-    z-index: 0; /* behind the main images */
+    z-index: 0;
+    /* behind the main images */
 }
+
 /* Keep main images hidden until radio is selected */
 .image-wrapper .img-black,
 .image-wrapper .img-brown,
@@ -703,44 +732,54 @@ html, body {
 }
 
 /* Show main images when radio is selected*/
-#collection-1-black:checked ~ .img-black,
-#collection-1-brown:checked ~ .img-brown,
-#collection-1-white:checked ~ .img-white {
+#collection-1-black:checked~.img-black,
+#collection-1-brown:checked~.img-brown,
+#collection-1-white:checked~.img-white {
     display: block;
-    z-index: 1; /* above default image */
+    z-index: 1;
+    /* above default image */
 }
 
 /* Dot colors */
-.color-swatches-horizontal .swatch-black { background-color: black; }
-.color-swatches-horizontal .swatch-white { background-color: white; }
-.color-swatches-horizontal .swatch-brown { background-color: #977945; }
+.color-swatches-horizontal .swatch-black {
+    background-color: black;
+}
+
+.color-swatches-horizontal .swatch-white {
+    background-color: white;
+}
+
+.color-swatches-horizontal .swatch-brown {
+    background-color: #977945;
+}
 
 /* Highlight active dot */
-#collection-1-black:checked ~ .color-swatches-horizontal label[for="collection-1-black"],
-#collection-1-white:checked ~ .color-swatches-horizontal label[for="collection-1-white"],
-#collection-1-brown:checked ~ .color-swatches-horizontal label[for="collection-1-brown"],
-#collection-2-black:checked ~ .color-swatches-horizontal label[for="collection-2-black"],
-#collection-2-white:checked ~ .color-swatches-horizontal label[for="collection-2-white"],
-#collection-2-brown:checked ~ .color-swatches-horizontal label[for="collection-2-brown"],
-#collection-3-black:checked ~ .color-swatches-horizontal label[for="collection-3-black"],
-#collection-3-white:checked ~ .color-swatches-horizontal label[for="collection-3-white"],
-#collection-3-brown:checked ~ .color-swatches-horizontal label[for="collection-3-brown"],
-#collection-4-black:checked ~ .color-swatches-horizontal label[for="collection-4-black"],
-#collection-4-white:checked ~ .color-swatches-horizontal label[for="collection-4-white"],
-#collection-4-brown:checked ~ .color-swatches-horizontal label[for="collection-4-brown"],
-#collection-5-black:checked ~ .color-swatches-horizontal label[for="collection-5-black"],
-#collection-5-white:checked ~ .color-swatches-horizontal label[for="collection-5-white"],
-#collection-5-brown:checked ~ .color-swatches-horizontal label[for="collection-5-brown"],
-#collection-6-black:checked ~ .color-swatches-horizontal label[for="collection-6-black"],
-#collection-6-white:checked ~ .color-swatches-horizontal label[for="collection-6-white"],
-#collection-6-brown:checked ~ .color-swatches-horizontal label[for="collection-6-brown"],
-#collection-7-black:checked ~ .color-swatches-horizontal label[for="collection-7-black"],
-#collection-7-white:checked ~ .color-swatches-horizontal label[for="collection-7-white"],
-#collection-7-brown:checked ~ .color-swatches-horizontal label[for="collection-7-brown"],
-#collection-8-black:checked ~ .color-swatches-horizontal label[for="collection-8-black"],
-#collection-8-white:checked ~ .color-swatches-horizontal label[for="collection-8-white"],
-#collection-8-brown:checked ~ .color-swatches-horizontal label[for="collection-8-brown"] {
-    border: 2px solid #172e22; /* highlight active swatch */
+#collection-1-black:checked~.color-swatches-horizontal label[for="collection-1-black"],
+#collection-1-white:checked~.color-swatches-horizontal label[for="collection-1-white"],
+#collection-1-brown:checked~.color-swatches-horizontal label[for="collection-1-brown"],
+#collection-2-black:checked~.color-swatches-horizontal label[for="collection-2-black"],
+#collection-2-white:checked~.color-swatches-horizontal label[for="collection-2-white"],
+#collection-2-brown:checked~.color-swatches-horizontal label[for="collection-2-brown"],
+#collection-3-black:checked~.color-swatches-horizontal label[for="collection-3-black"],
+#collection-3-white:checked~.color-swatches-horizontal label[for="collection-3-white"],
+#collection-3-brown:checked~.color-swatches-horizontal label[for="collection-3-brown"],
+#collection-4-black:checked~.color-swatches-horizontal label[for="collection-4-black"],
+#collection-4-white:checked~.color-swatches-horizontal label[for="collection-4-white"],
+#collection-4-brown:checked~.color-swatches-horizontal label[for="collection-4-brown"],
+#collection-5-black:checked~.color-swatches-horizontal label[for="collection-5-black"],
+#collection-5-white:checked~.color-swatches-horizontal label[for="collection-5-white"],
+#collection-5-brown:checked~.color-swatches-horizontal label[for="collection-5-brown"],
+#collection-6-black:checked~.color-swatches-horizontal label[for="collection-6-black"],
+#collection-6-white:checked~.color-swatches-horizontal label[for="collection-6-white"],
+#collection-6-brown:checked~.color-swatches-horizontal label[for="collection-6-brown"],
+#collection-7-black:checked~.color-swatches-horizontal label[for="collection-7-black"],
+#collection-7-white:checked~.color-swatches-horizontal label[for="collection-7-white"],
+#collection-7-brown:checked~.color-swatches-horizontal label[for="collection-7-brown"],
+#collection-8-black:checked~.color-swatches-horizontal label[for="collection-8-black"],
+#collection-8-white:checked~.color-swatches-horizontal label[for="collection-8-white"],
+#collection-8-brown:checked~.color-swatches-horizontal label[for="collection-8-brown"] {
+    border: 2px solid #172e22;
+    /* highlight active swatch */
 }
 
 
@@ -755,23 +794,25 @@ html, body {
 
 .greenhouse-img-container {
     max-width: 85%;
-    margin-left: 52px; 
+    margin-left: 52px;
     overflow: hidden;
 }
+
 /* Image container */
 .greenhouse-section .position-relative.h-100 {
     min-height: 85%;
     display: flex;
     align-items: center;
 }
+
 .greenhouse-section img {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 /* Play button  */
 .greenhouse-section .play-button {
-    width: 100px; 
+    width: 100px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -823,11 +864,11 @@ html, body {
 .greenhouse-section .btn-success {
     background-color: #172e22;
     border: none;
-    width: 121px; 
+    width: 121px;
     height: 42px;
-    line-height: 42px; 
+    line-height: 42px;
     font-size: 13px;
-    border-radius: 50px; 
+    border-radius: 50px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -836,12 +877,12 @@ html, body {
 
 /*==========Icon-section===============*/
 .icon-container {
-    background-color: #ffffff; 
-    max-width: 1400px;         
+    background-color: #ffffff;
+    max-width: 1400px;
     position: relative;
-    min-height: 500px;         
-    border-radius: 10px;    
-    font-family: "Albert Sans", sans-serif; 
+    min-height: 500px;
+    border-radius: 10px;
+    font-family: "Albert Sans", sans-serif;
 }
 
 .icon-svg {
@@ -854,39 +895,41 @@ html, body {
 .title-text {
     font-size: 40px;
     line-height: 50.4px;
-    font-weight: 400;       
-    color: #214332; 
+    font-weight: 400;
+    color: #214332;
 }
-.icon-container h5{
+
+.icon-container h5 {
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
     margin-bottom: 10px;
-    color: #214332; 
+    color: #214332;
 }
+
 .icon-container p {
-    color: #214332 !important;   
-    font-weight: 400;            
-    font-size: 14px;              
-    line-height: 24px;            
-    margin-bottom: 10px;          
+    color: #214332 !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
 }
 
 
 /*=========== Shop by collection ==========*/
 /* Container */
 .shop-products .container-fluid {
-    padding-top: 40px;    
+    padding-top: 40px;
     padding-bottom: 40px;
     margin: 0;
     background-color: rgb(245, 245, 236);
-    font-family: "Albert Sans", sans-serif; 
+    font-family: "Albert Sans", sans-serif;
     padding-left: 35px !important;
     padding-right: 0 !important;
 }
 
 /* Top row nav */
-.text-fp{
+.text-fp {
     font-size: 42px;
     line-height: 50.4px;
     color: #172e22 !important;
@@ -897,7 +940,7 @@ html, body {
 
 /* spacing from container edge */
 .collection-nav {
-    margin-right:25px; 
+    margin-right: 25px;
 }
 
 .collection-nav-btn {
@@ -910,7 +953,7 @@ html, body {
     background-color: rgb(245, 245, 236);
     border-radius: 50%;
     cursor: pointer;
-    margin-left: 3px; 
+    margin-left: 3px;
     transition: all 0.25s ease;
 }
 
@@ -931,17 +974,19 @@ html, body {
 .collection-nav-btn:focus {
     outline: none;
 }
+
 .mySwiper {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .swiper-wrapper {
-  display: flex;
-  padding-left: 35px; 
-  padding-right: 0;
+    display: flex;
+    padding-left: 35px;
+    padding-right: 0;
 }
+
 /* swiper slides */
 .swiper-slide {
     width: auto !important;
@@ -1025,17 +1070,18 @@ html, body {
 
 /* Image container */
 .summer-guide-img-container {
-    width: 100%;         
-    max-width: 100%;     
+    width: 100%;
+    max-width: 100%;
     overflow: hidden;
     border-radius: 10px;
 }
 
 /* Section Label left side */
 .summer-guide-section .text-column {
-    font-family: "Albert Sans", sans-serif; 
-    color:#214332;
+    font-family: "Albert Sans", sans-serif;
+    color: #214332;
 }
+
 /* GET THE GROW-HOW */
 .summer-guide-section .section-label {
     text-transform: uppercase;
@@ -1066,14 +1112,14 @@ html, body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: #214332 ;
+    background-color: #214332;
     border: none;
-    width: 170px; 
+    width: 170px;
     height: 42px;
-    line-height: 42px; 
+    line-height: 42px;
     font-size: 14px;
-    border-radius: 60px; 
-    font-weight: 500;    
+    border-radius: 60px;
+    font-weight: 500;
 }
 
 /*================ Responsive ================*/
@@ -1087,14 +1133,14 @@ html, body {
     }
 
     .summer-guide-section .summer-guide-img-container {
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
 
-.line{
+.line {
     height: 3px;
     background-color: #214332 !important;
-    margin: 10px 40px;    
+    margin: 10px 40px;
 }
 
 /*========== #EcomusYourSpace! ==============*/
@@ -1109,7 +1155,7 @@ html, body {
 .ecomus-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .ecomus-title {
@@ -1118,7 +1164,7 @@ html, body {
     line-height: 33.6px;
     font-weight: 400;
     color: #172e22;
-    text-align: center; 
+    text-align: center;
     margin-bottom: 60px;
     margin-top: 10px;
 }
@@ -1134,7 +1180,7 @@ html, body {
 /* IMAGE WRAPPER */
 .ecomus-image-wrapper {
     width: 100%;
-    position: relative; 
+    position: relative;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -1157,7 +1203,8 @@ html, body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* perfectly center */
+    transform: translate(-50%, -50%);
+    /* perfectly center */
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -1169,13 +1216,15 @@ html, body {
     justify-content: center;
     cursor: pointer;
     opacity: 0;
-    pointer-events: none; 
+    pointer-events: none;
 }
+
 /* BUTTON HOVER */
 .ecomus-image-wrapper:hover .ecomus-action-btn {
     opacity: 1;
     pointer-events: auto;
 }
+
 .ecomus-image-wrapper:hover .ecomus-action-btn:hover {
 
     background-color: #214332;
@@ -1186,9 +1235,9 @@ html, body {
 
 /* Main footer container */
 .hp-footer {
-    background-color: rgb(33, 67, 50); 
-    color: white;  
-    font-family: "Albert Sans", sans-serif;                    
+    background-color: rgb(33, 67, 50);
+    color: white;
+    font-family: "Albert Sans", sans-serif;
 }
 
 /* Footer sections */
@@ -1204,28 +1253,30 @@ html, body {
 .hp-border-right {
     border-right: 1px solid rgba(235, 235, 235, 0.15);
 }
-.hp-footer-section.help-section{
+
+.hp-footer-section.help-section {
     padding-left: 40px;
 }
+
 .hp-footer-section {
     height: 100%;
     padding-top: 40px;
     padding-bottom: 60px;
     padding-left: 15px;
-    padding-right: 50px; 
+    padding-right: 50px;
     box-sizing: border-box;
 }
 
 
 /* Footer Lists */
 .hp-footer-item {
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .hp-footer-link {
     color: white;
     text-decoration: none;
-    
+
 }
 
 .hp-footer-list {
@@ -1234,7 +1285,8 @@ html, body {
     list-style: none;
     font-weight: 400;
 }
-.hp-footer-item .underlined{
+
+.hp-footer-item .underlined {
     text-decoration: underline;
 }
 
@@ -1249,13 +1301,13 @@ html, body {
     margin-top: 1rem;
 }
 
-.hp-social-icon {   
+.hp-social-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     font-size: 14px !important;
     line-height: 28.4px;
-    color: white;           
+    color: white;
     text-decoration: none;
 }
 
@@ -1265,7 +1317,7 @@ html, body {
 .hp-social-icon.facebook:hover {
     color: #3b5998;
     transition: all 0.4s ease-in-out;
-   
+
 }
 
 .hp-social-icon.twitter:hover {
@@ -1280,12 +1332,10 @@ html, body {
 }
 
 .hp-social-icon.instagram:hover i {
-    
-    background: linear-gradient(
-        #8a3ab9,
-        #e95950,
-        #fccc63
-    );
+
+    background: linear-gradient(#8a3ab9,
+            #e95950,
+            #fccc63);
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -1294,7 +1344,7 @@ html, body {
 }
 
 .hp-social-icon.tiktok:hover {
-    color: #fe2c55; 
+    color: #fe2c55;
     transition: all 0.4s ease-in-out;
 }
 
@@ -1313,15 +1363,15 @@ html, body {
 .hp-newsletter-desc {
     color: white;
     font-size: 14px;
-    line-height: 22.4px;                        
+    line-height: 22.4px;
     margin-bottom: 24px;
-    
+
 }
 
 
 /* Input group wrapper */
 .hp-input-group {
-    position: relative;     
+    position: relative;
     display: flex;
     border-radius: 60px;
 }
@@ -1329,15 +1379,15 @@ html, body {
 /* Input field */
 .hp-form-input {
     flex: 1;
-    height: 55px;                  
-    padding: 0px 120px 0px 20px; 
+    height: 55px;
+    padding: 0px 120px 0px 20px;
     background-color: white;
-    color: #909090;                
+    color: #909090;
     font-size: 13px;
     outline: none;
-    caret-color: #909090;          
+    caret-color: #909090;
     border: none;
-    border-radius: 60px;           
+    border-radius: 60px;
     box-sizing: border-box;
 }
 
@@ -1350,13 +1400,13 @@ html, body {
 
 /* Subscribe button inside input */
 .hp-subscribe-btn {
-    position: absolute;           
-    right: 5px;                   
+    position: absolute;
+    right: 5px;
     top: 50%;
-    transform: translateY(-50%);  
-    height: 40px;                 
-    padding: 0 10px;              
-    border-radius: 50px;          
+    transform: translateY(-50%);
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 50px;
     border: none;
     background-color: #214332;
     color: white;
@@ -1365,10 +1415,11 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;                   
+    gap: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     white-space: nowrap;
 }
+
 .hp-error-msg {
     color: #ff4d4f;
     font-size: 13px;
@@ -1377,12 +1428,12 @@ html, body {
 }
 
 /*============= Dropdown box ========= */
-.hp-footer-flex-container  {
-    margin-left: 50px; 
+.hp-footer-flex-container {
+    margin-left: 50px;
     margin-right: 50px;
 }
 
- /* Currency */
+/* Currency */
 .custom-select {
     width: 100%;
     padding: 6px 12px 6px 8px;
@@ -1391,39 +1442,41 @@ html, body {
     color: white;
     cursor: pointer;
 }
+
 .custom-select option {
     color: black;
 }
 
 .custom-arrow {
     position: absolute;
-    left: 50px; 
+    left: 50px;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
     color: white;
     font-size: 1rem;
 }
+
 .custom-select:focus,
 .custom-select:active {
-    background-color: transparent ;
+    background-color: transparent;
     color: white;
     box-shadow: none;
-    outline: none ;
+    outline: none;
 }
 
 /*LANGUAGES*/
 .custom-select1 {
     width: 100%;
-    padding: 6px 1px 6px 8px; 
+    padding: 6px 1px 6px 8px;
     background-color: transparent;
     border: none;
-    color: white; 
+    color: white;
     cursor: pointer;
 }
 
 .custom-select1 option {
-    color: black; 
+    color: black;
 }
 
 .custom-select1:focus,
@@ -1437,10 +1490,10 @@ html, body {
 
 .custom-arrow1 {
     position: absolute;
-    right: 4px; 
+    right: 4px;
     top: 50%;
     transform: translateY(-50%);
-    pointer-events: none; 
+    pointer-events: none;
     color: white;
     font-size: 16px;
 }
@@ -1466,12 +1519,12 @@ html, body {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    
+
     .hp-payment-methods {
         justify-content: flex-start;
         margin-top: 1rem;
     }
-    
+
     /* Remove vertical borders on mobile */
     .hp-border-right {
         border-right: none;
@@ -1484,12 +1537,12 @@ html, body {
         height: 35px;
         padding: 5px;
     }
-    
+
     .hp-social-icon {
         width: 32px;
         height: 32px;
     }
-    
+
     .hp-social-icon i {
         font-size: 0.9rem;
     }
