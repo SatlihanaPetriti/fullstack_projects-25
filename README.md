@@ -1,4 +1,3 @@
-# fullstack_projects-25
 # Frontend Projects
 
 ## About
